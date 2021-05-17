@@ -2,30 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void polycirc(int x, int y, int r)
-{
-    int gd = DETECT ,gm, i;
-    initgraph(&gd, &gm, " ");
-
-    int temp;
-    for(int i=0; i<r/sqrt(2.0); i++)
-    {
-        temp = sqrt(r*r-i*i);
-        putpixel(i+x,temp+y,WHITE);
-        putpixel(temp+x,i+y,WHITE);
-        putpixel(-i+x,-temp+y,WHITE);
-        putpixel(-temp+x,-i+y,WHITE);
-        putpixel(-i+x,temp+y,WHITE);
-        putpixel(temp+x,-i+y,WHITE);
-        putpixel(i+x,-temp+y,WHITE);
-        putpixel(-temp+x,i+y,WHITE);
-        cout<<"Plotting points: ("<<i+x<<","<<temp+y<<"),("<<temp+x<<","<<i+y<<"),("<<-i+x<<","<<-temp+y<<"),("<<-temp+x<<","<<-i+y<<"),("<<-i+x<<","<<temp+y<<"),("<<temp+x<<","<<-i+y<<"),("<<i+x<<","<<-temp+y<<"),("<<-tem…
-[2:37 PM, 9/8/2020] Maheep IT: trignometric
-[2:38 PM, 9/8/2020] Maheep IT: #define _USE_MATH_DEFINES
-#include<graphics.h>
-#include<bits/stdc++.h>
-using namespace std;
-
 void trigcirc(int x, int y, int r)
 {
     int gd = DETECT ,gm;

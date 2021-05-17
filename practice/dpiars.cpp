@@ -12,7 +12,10 @@ int main()
 freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 #endif
-int n,m;
+int n,m;if (/* condition */)
+{
+    /* code */
+}
 cin>>n>>m;
 set<int> s;
 vector<int> A;
